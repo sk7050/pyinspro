@@ -1,14 +1,21 @@
-import json
+#small_Database
+#Small_SinUp_Loging_system:
+
+'''*****************SinUp & Login System****************'''
+
 print("*********Wellcome to Sk Data System******")
 get=int(input("What do you want!!? for SinUp Pess 1 or Login press 0:"))
 database={}
+c={}
 def update_database():
-    
+   #Creat text File in_same_Directory as Name of data.txt
     with open("data.txt") as ref:
         for line in ref:
-
-            c=json.loads(line)
-            database.update(c)
+        	key,value=line.strip().split(",")
+        	c[key]=int(value)
+        	database.update(c)
+        	
+        	
 
     
     
@@ -25,7 +32,7 @@ def sinup(user_name,password,database):
             break
     else:
         newdata = open("data.txt", "a")
-        newdata .write('{"%s":%d} \n'%(user_name,password))
+        newdata .write('%s,%d \n'%(user_name,password))
         print("sinup successfully ")
         newdata.close()
         update_database()
@@ -63,16 +70,10 @@ def log_input():
     password=int(input("Please input Password:"))
     login(user_name,password,database)  
 
-
 if (get==1):
     sin_input()
 
 elif (get==0):
     log_input()
-
-    
-
-
-        
-        
-
+'''***********************************************'''
+#
