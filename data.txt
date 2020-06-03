@@ -1,12 +1,3 @@
-{"faisal":123456}
-{"Partha Sharothi":23457}
-{"ddd":11} 
-{"ggg":333} 
-{"shaikh":1234567} 
-{"faisal":123456} 
-{"anu":2366} 
-{"masum":1234567890} 
-{"md jakir":1234512}
-{"faisal":123456} 
-{"shabnam":112233} 
-{"M Sajol Hossain":123456} 
+faisal,123456
+Partha Sharothi,23457
+M Sajol Hossain,123456
